@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET Master Sheet · The Ultimate Study Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>🏆 NEET Mastery Sheet <span class="version">v2.0</span></h1>
+                <div class="theme-toggle">
+                    <button id="theme-btn" class="icon-btn">🌙 Dark</button>
+                </div>
+            </div>
+            
+            <p class="subtitle">A curated, step-by-step roadmap to conquer Biology, Chemistry, and Physics for NEET. 
+                Based on the "Striver" problem-solving approach for aspirants.</p>
+            
+            <div class="quick-stats">
+                <div class="stat-card">
+                    <i class="fas fa-dna"></i>
+                    <span>Biology</span>
+                    <strong id="bio-count">0</strong>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-flask"></i>
+                    <span>Chemistry</span>
+                    <strong id="chem-count">0</strong>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-atom"></i>
+                    <span>Physics</span>
+                    <strong id="physics-count">0</strong>
+                </div>
+            </div>
+
+            <div class="stats">
+                <span><i class="fas fa-tasks"></i> Total Problems: <strong id="total-count">0</strong></span>
+                <span><i class="fas fa-check-circle"></i> Solved: <strong id="solved-count">0</strong></span>
+                <span><i class="fas fa-chart-line"></i> Progress: <strong id="progress-percentage">0%</strong></span>
+            </div>
+            
+            <div class="progress-bar-container">
+                <div id="progress-fill" class="progress-fill" style="width: 0%;"></div>
+            </div>
+
+            <div class="action-bar">
+                <div class="action-group">
+                    <button id="export-progress" class="action-btn"><i class="fas fa-download"></i> Export</button>
+                    <button id="import-progress" class="action-btn"><i class="fas fa-upload"></i> Import</button>
+                    <button id="reset-progress" class="action-btn danger"><i class="fas fa-trash"></i> Reset</button>
+                </div>
+                <div class="filter-group">
+                    <select id="topic-filter" class="filter-select">
+                        <option value="all">All Topics</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Physics">Physics</option>
+                    </select>
+                    <select id="difficulty-filter" class="filter-select">
+                        <option value="all">All Difficulties</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <button id="clear-filters" class="action-btn secondary"><i class="fas fa-times"></i> Clear</button>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h3><i class="fas fa-download"></i> Free PYQ Resources <span class="badge">Updated 2024</span></h3>
+                <div class="download-grid">
+                    <div class="download-card">
+                        <i class="fas fa-file-pdf" style="color: #ff6b6b;"></i>
+                        <div class="card-content">
+                            <h4>NEET 2024 PYQs (All India)</h4>
+                            <p>Complete paper with answer key • 200 questions</p>
+                            <a href="https://drive.google.com/uc?export=download&id=1EXAMPLE" class="download-link" target="_blank">
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                        </div>
+                    </div>
+                    <div class="download-card">
+                        <i class="fas fa-file-pdf" style="color: #ff6b6b;"></i>
+                        <div class="card-content">
+                            <h4>Biology PYQ Bank (2019-2024)</h4>
+                            <p>Chapter-wise • 1000+ questions with answers</p>
+                            <a href="https://drive.google.com/uc?export=download&id=2EXAMPLE" class="download-link" target="_blank">
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                        </div>
+                    </div>
+                    <div class="download-card">
+                        <i class="fas fa-file-pdf" style="color: #ff6b6b;"></i>
+                        <div class="card-content">
+                            <h4>Chemistry PYQ Compilation</h4>
+                            <p>Topic-wise segregation • Detailed solutions</p>
+                            <a href="https://drive.google.com/uc?export=download&id=3EXAMPLE" class="download-link" target="_blank">
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                        </div>
+                    </div>
+                    <div class="download-card">
+                        <i class="fas fa-file-pdf" style="color: #ff6b6b;"></i>
+                        <div class="card-content">
+                            <h4>Physics PYQ Mega Pack</h4>
+                            <p>Last 10 years • Formula sheet included</p>
+                            <a href="https://drive.google.com/uc?export=download&id=4EXAMPLE" class="download-link" target="_blank">
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="table-container">
+                <table id="problem-table">
+                    <thead>
+                        <tr>
+                            <th width="50">✅</th>
+                            <th width="200">Topic</th>
+                            <th>Problem / Concept</th>
+                            <th width="100">Difficulty</th>
+                            <th width="300">Resources</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- JavaScript will load data here -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> for NEET Aspirants</p>
+                <p class="small">Data sources: NCERT Official, NTA NEET, Open Educational Resources</p>
+                <p class="small">Last updated: <span id="last-updated">2024</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="notification" class="notification"></div>
+    <input type="file" id="import-file" accept=".json" style="display: none;">
+    <script src="script.js"></script>
+</body>
+</html>
