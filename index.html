@@ -1,98 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEET 2026 · The Drop Year Sheet (Complete)</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🎯 NEET 2026 · The Drop Year Sheet</h1>
-            <p class="subtitle">For <strong>NEET Aspirant</strong> — stay consistent, stay ahead.</p>
-            <div class="quote">
-                "A drop year isn't a gap, it's a launchpad. Trust the process."
-            </div>
-            
-            <!-- Stats Cards -->
-            <div class="stats">
-                <div class="stat-card">
-                    <span class="stat-label">📚 Total Topics</span>
-                    <span class="stat-value" id="total-count">0</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-label">✅ Completed</span>
-                    <span class="stat-value" id="solved-count">0</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-label">📊 Progress</span>
-                    <span class="stat-value" id="progress-percentage">0%</span>
-                </div>
-            </div>
-            
-            <!-- Progress Bar -->
-            <div class="progress-bar-container">
-                <div id="progress-fill" class="progress-fill" style="width: 0%;"></div>
-            </div>
-
-            <!-- Filter Section (This was missing!) -->
-            <div class="filters">
-                <div class="filter-group">
-                    <label>Subject:</label>
-                    <select id="subjectFilter">
-                        <option value="all">All Subjects</option>
-                        <option value="Physics">Physics</option>
-                        <option value="Chemistry">Chemistry</option>
-                        <option value="Biology">Biology</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group">
-                    <label>Difficulty:</label>
-                    <select id="difficultyFilter">
-                        <option value="all">All Difficulties</option>
-                        <option value="easy">Easy</option>
-                        <option value="medium">Medium</option>
-                        <option value="hard">Hard</option>
-                    </select>
-                </div>
-                
-                <div class="filter-group search-group">
-                    <label>🔍 Search:</label>
-                    <input type="text" id="searchInput" placeholder="Search topic or chapter...">
-                </div>
-                
-                <button id="randomTopicBtn" class="action-btn random-btn" title="Pick a random unfinished topic">🎲 Random Topic</button>
-                <button id="resetFiltersBtn" class="action-btn reset-btn">🧹 Reset Filters</button>
-            </div>
-            
-            <!-- Filter results count -->
-            <div class="filter-info" id="filterInfo"></div>
-        </header>
-
-        <main>
-            <table id="problem-table">
-                <thead>
-                    <tr>
-                        <th>Done</th>
-                        <th>Subject</th>
-                        <th>Topic</th>
-                        <th>Chapter</th>
-                        <th>Difficulty</th>
-                        <th>Resources</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                    <!-- JavaScript will fill this -->
-                </tbody>
-            </table>
-        </main>
-        
-        <footer>
-            <p>✨ Complete NCERT coverage for NEET 2026 · Track your progress · Stay motivated</p>
-        </footer>
-    </div>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEET Quiz Pro</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
