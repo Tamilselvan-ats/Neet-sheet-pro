@@ -1,0 +1,116 @@
+[
+  {
+    "id": "001",
+    "subject": "Physics",
+    "chapter": "Electrostatics",
+    "topic": "Coulomb's Law",
+    "difficulty": "Medium",
+    "question": "Two charges +q and -q are separated by a fixed distance r. The force between them is:",
+    "image": "/images/page1_img1.svg",
+    "options": [
+      "Attractive and proportional to q²/r²",
+      "Repulsive and proportional to q²/r²",
+      "Attractive and proportional to q/r",
+      "Zero because net charge is zero"
+    ],
+    "answer": "A",
+    "year": 2026,
+    "notesLink": "https://example.com/electrostatics-notes",
+    "videoLink": "https://example.com/electrostatics-video"
+  },
+  {
+    "id": "002",
+    "subject": "Chemistry",
+    "chapter": "Atomic Structure",
+    "topic": "Bohr Model",
+    "difficulty": "Easy",
+    "question": "According to Bohr's model, angular momentum of electron is:",
+    "image": "",
+    "options": [
+      "Continuous",
+      "Quantized",
+      "Always zero",
+      "Independent of orbit"
+    ],
+    "answer": "B",
+    "year": 2025,
+    "notesLink": "https://example.com/bohr-notes",
+    "videoLink": "https://example.com/bohr-video"
+  },
+  {
+    "id": "003",
+    "subject": "Biology",
+    "chapter": "Human Physiology",
+    "topic": "Cardiac Cycle",
+    "difficulty": "Hard",
+    "question": "Which valve closes at the beginning of ventricular systole?",
+    "image": "/images/page2_img1.svg",
+    "options": [
+      "Aortic valve",
+      "Pulmonary valve",
+      "Bicuspid and tricuspid valves",
+      "All valves simultaneously"
+    ],
+    "answer": "C",
+    "year": 2024,
+    "notesLink": "https://example.com/cardiac-notes",
+    "videoLink": "https://example.com/cardiac-video"
+  },
+  {
+    "id": "004",
+    "subject": "Physics",
+    "chapter": "Modern Physics",
+    "topic": "Photoelectric Effect",
+    "difficulty": "Medium",
+    "question": "Stopping potential in photoelectric effect depends on:",
+    "image": "",
+    "options": [
+      "Intensity of incident light",
+      "Frequency of incident light",
+      "Distance from source",
+      "Area of metal plate"
+    ],
+    "answer": "B",
+    "year": 2023,
+    "notesLink": "https://example.com/photoelectric-notes",
+    "videoLink": "https://example.com/photoelectric-video"
+  },
+  {
+    "id": "005",
+    "subject": "Chemistry",
+    "chapter": "Organic Chemistry",
+    "topic": "Hydrocarbons",
+    "difficulty": "Medium",
+    "question": "General formula of alkanes is:",
+    "image": "",
+    "options": [
+      "CnH2n",
+      "CnH2n+2",
+      "CnH2n-2",
+      "CnHn"
+    ],
+    "answer": "B",
+    "year": 2026,
+    "notesLink": "https://example.com/alkane-notes",
+    "videoLink": "https://example.com/alkane-video"
+  },
+  {
+    "id": "006",
+    "subject": "Biology",
+    "chapter": "Genetics",
+    "topic": "Mendelian Inheritance",
+    "difficulty": "Easy",
+    "question": "The law of segregation was proposed by:",
+    "image": "",
+    "options": [
+      "Charles Darwin",
+      "Watson and Crick",
+      "Gregor Mendel",
+      "Thomas Hunt Morgan"
+    ],
+    "answer": "C",
+    "year": 2022,
+    "notesLink": "https://example.com/mendel-notes",
+    "videoLink": "https://example.com/mendel-video"
+  }
+]
